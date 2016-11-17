@@ -1,3 +1,7 @@
+### New in 0.23.1-iw (released 2016/11/23)
+
+* Fixed: Added missing enum values
+
 ### New in 0.23.0 (released 07/10/2016)
 
 **Features**

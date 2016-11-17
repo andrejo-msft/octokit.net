@@ -261,7 +261,7 @@ Target "CreateOctokitPackage" (fun _ ->
             OutputPath = packagingRoot
             Summary = projectSummary
             WorkingDir = packagingDir
-            Version = releaseNotes.AssemblyVersion
+            Version = releaseNotes.NugetVersion
             ReleaseNotes = toLines releaseNotes.Notes
             AccessKey = getBuildParamOrDefault "nugetkey" ""
             Publish = hasBuildParam "nugetkey" }) "octokit.nuspec"
@@ -285,10 +285,10 @@ Target "CreateOctokitReactivePackage" (fun _ ->
             OutputPath = packagingRoot
             Summary = reactiveProjectSummary
             WorkingDir = reactivePackagingDir
-            Version = releaseNotes.AssemblyVersion
+            Version = releaseNotes.NugetVersion
             ReleaseNotes = toLines releaseNotes.Notes
             Dependencies =
-                ["Octokit", NormalizeVersion releaseNotes.AssemblyVersion
+                ["Octokit", NormalizeVersion releaseNotes.NugetVersion
                  "Rx-Main", GetPackageVersion "./packages/" "Rx-Main"]
             AccessKey = getBuildParamOrDefault "nugetkey" ""
             Publish = hasBuildParam "nugetkey" }) "Octokit.Reactive.nuspec"
