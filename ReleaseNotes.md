@@ -1,3 +1,7 @@
+### New in 0.23.2-iw (released 2017/01/06)
+
+* Fixed: Added missing enum value 'reviewrequested'
+
 ### New in 0.23.1-iw (released 2016/11/23)
 
 * Fixed: Added missing enum values
