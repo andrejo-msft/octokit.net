@@ -1,3 +1,7 @@
+### New in 0.23.3-iw (released 2017/01/14)
+
+* New: Support for IssueCommentRequests.
+
 ### New in 0.23.2-iw (released 2017/01/06)
 
 * Fixed: Added missing enum value 'reviewrequested'
